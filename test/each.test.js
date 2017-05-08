@@ -39,5 +39,13 @@ describe('each()', () => {
     });
     expect(count).toBe(3);
   });
-});
 
+  it('iterates every element of an array', () => {
+    const arr = [1, 2, 3];
+    let sum = 0;
+    _.each(arr, function(element) {
+      sum += element;
+    });
+    expect(sum).toBe(6);
+  });
+});
