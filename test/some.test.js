@@ -11,4 +11,11 @@ describe('some()', () => {
     expect(_.some(nums, num => num % 2 === 1)).toBe(false);
   });
 
+  it('returns true if any number in obj is odd', () => {
+    const nums = {a:2, b:4, c:5, d:6};
+    expect(_.some(nums, num => num % 2 === 1)).toBe(true);
+  });
+
+
+
 });
