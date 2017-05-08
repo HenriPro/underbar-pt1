@@ -9,6 +9,10 @@ describe('first()', () => {
     expect(_.first(['a', 'b', 'c'], 2)).toEqual(['a', 'b']);
   });
 
+  it('returns the whole array if passed length of array', () => {
+    expect(_.first(['a', 'b', 'c'], 3)).toEqual(['a', 'b', 'c']);
+  });
+
   it('returns the whole array if you ask for more elements than it has', () => {
     expect(_.first(['a', 'b', 'c'], 5)).toEqual(['a', 'b', 'c']);
   });
