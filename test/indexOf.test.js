@@ -26,4 +26,9 @@ describe('indexOf()', () => {
     expect(_.indexOf(arr, 'bar', 2)).toBe(3);
   });
 
+  it('starts searching at the given offset, returning -1 if no match after offset', () => {
+    const arr = ['foo', 'bar', 'baz', 'baz', 'baz'];
+    expect(_.indexOf(arr, 'bar', 2)).toBe(-1);
+  });
+
 });
